@@ -37,6 +37,7 @@ export default function Home() {
     }
     setUserDailyRateDays(days)
     setUserDailyRateData(numMsgs)
+    
   }
   useEffect(() => {
     getData()
