@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 0 0 6 0.5 rgba(0,0,0,0.37)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="0"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.37)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="filter-1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 0 0 6 0.5 rgba(0,0,0,0.37)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="0"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="feFuncA-1" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.37)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <polyline style="fill-rule: nonzero; paint-order: fill; stroke-linecap: round; stroke-linejoin: round; fill: none; filter: url(#drop-shadow-filter-0); stroke: rgb(255, 255, 255); stroke-width: 25px;" points="80 260 80 84.69999694824219 190 152 300 89.30000305175781" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, -3.552713678800501e-15, -3.552713678800501e-15)"/>
+  <polyline style="fill-rule: nonzero; paint-order: fill; stroke-linecap: round; stroke-linejoin: round; fill: none; filter: url(#filter-1); stroke: rgb(0, 173, 239); stroke-width: 25px;" points="125.46800231933594 260 125.18099975585938 150.2760009765625 190 187.89999389648438 300 130.7270050048828 300 260 190 260" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, -3.552713678800501e-15, -3.552713678800501e-15)"/>
+</svg>
